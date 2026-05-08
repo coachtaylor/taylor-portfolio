@@ -9,5 +9,8 @@ deploy/
 deploy.zip
 
 # Private docs
-Ask Lola - Product Summary.docx
+Ask Lola - *.docx
 uploads/
+
+# Claude Code local settings (user-specific)
+.claude/settings.local.json

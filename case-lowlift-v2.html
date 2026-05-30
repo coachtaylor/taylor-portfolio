@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LowLift Fitness — Case Study · Taylor Pangilinan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="portfolio.css" />
+<link rel="stylesheet" href="case.css" />
+</head>
+<body class="case">
+
+<div class="bg-base"></div>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+
+<nav class="top case-nav" id="topnav">
+  <div class="container nav-row">
+    <a class="back-link" href="index.html#work">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 19l-7-7 7-7" /></svg>
+      All work
+    </a>
+    <div class="nav-right">
+      <span class="pill">LowLift Fitness</span>
+      <span class="live-text">Case study</span>
+    </div>
+  </div>
+</nav>
+
+<main class="shell" id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="case-hero" data-screen-label="01 Hero">
+    <div class="container">
+      <div class="hero-deck">
+        <div>
+          <div class="hero-tag reveal"><span class="num">01</span> Case study · Health &amp; wellness · Live</div>
+          <h1 class="case-title reveal d1">Built for the <span class="accent">first ten reps</span>, not the next PR.</h1>
+          <p class="hero-lede reveal d2">
+            LowLift is a fitness app for the people the rest of the market actively scares off &mdash;
+            the absolute beginner, the post&#8209;injury return, the gym&#8209;shy. Designed, built, and
+            shipped solo over four months.
+          </p>
+        </div>
+        <div class="hero-phone reveal d2">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <img src="assets/lowlift-app.png" alt="LowLift Fitness home screen" />
+          </div>
+        </div>
+      </div>
+
+      <div class="meta-strip reveal d3">
+        <div class="meta-cell"><div class="k">// ROLE</div><div class="v">Solo, end-to-end</div></div>
+        <div class="meta-cell"><div class="k">// TIMELINE</div><div class="v">4 months · 2024</div></div>
+        <div class="meta-cell"><div class="k">// STACK</div><div class="v">Next.js · Tailwind · Supabase</div></div>
+        <div class="meta-cell"><div class="k">// STATUS</div><div class="v live">Live · iterating</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="block" data-screen-label="02 Problem">
+    <div class="container">
+      <div class="section-label reveal">// 01 — The problem</div>
+      <h2 class="h reveal">The fitness market sells <span class="accent">to the already-fit.</span></h2>
+
+      <div class="hook reveal d1">
+        <div>
+          <p class="pull">Open any top&#8209;grossing fitness app. <em>Day 1 is a 45&#8209;minute HIIT.</em> Day 2 is a heavier 45&#8209;minute HIIT. There is no Day 0.</p>
+          <div class="author">// TP, opening notes · MAR 2024</div>
+        </div>
+        <div class="ring-stat">
+          <div class="big">73%</div>
+          <div class="lab">of new fitness app users quit within 90 days</div>
+          <div class="src">// PUBLIC APP-RETENTION BENCHMARKS. THE COHORT I CARED ABOUT QUIT FASTER.</div>
+        </div>
+      </div>
+
+      <div class="insight-grid">
+        <div class="insight reveal"><div class="badge">A</div><h3>The &ldquo;easy&rdquo; tier isn&rsquo;t easy.</h3><p>I audited 12 top apps. Their &ldquo;beginner&rdquo; plans assumed a 30&#8209;minute baseline. Anyone deconditioned bounces in week one &mdash; and blames themselves, not the program.</p></div>
+        <div class="insight reveal d1"><div class="badge">B</div><h3>Shame is the real churn driver.</h3><p>In 40+ user interviews, the word that kept coming back wasn&rsquo;t &ldquo;hard.&rdquo; It was &ldquo;embarrassing.&rdquo; Apps that show jacked silhouettes lose this user before login.</p></div>
+        <div class="insight reveal d2"><div class="badge">C</div><h3>The gap is huge &mdash; and ignored.</h3><p>~60% of US adults don&rsquo;t meet activity guidelines. The market chases the 15% who already lift. Nobody fights for the bottom of the funnel because it&rsquo;s &ldquo;low LTV.&rdquo; Wrong.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="block" data-screen-label="03 Process">
+    <div class="container">
+      <div class="section-label reveal">// 02 — Process</div>
+      <h2 class="h reveal">Four months. <span class="accent">No agency. No committee.</span></h2>
+
+      <div class="process">
+        <aside class="process-aside reveal">
+          <span class="label-pill">SOLO_LOOP</span>
+          <p style="margin-top:18px;font-size:14px;color:var(--muted);line-height:1.62">One person doing discovery, design, code, and shipping. The loop tightens every week &mdash; interview Monday, build Tue&ndash;Thu, test Friday, repeat.</p>
+        </aside>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="num">01</div>
+            <div>
+              <div class="kicker">// WK 1–3 · DISCOVERY</div>
+              <h3>Talk to the people apps had already lost.</h3>
+              <p>I didn&rsquo;t recruit from &ldquo;fitness enthusiasts.&rdquo; I posted in r/loseit, physical&#8209;therapy subs, and a Discord for post&#8209;partum return&#8209;to&#8209;exercise. Recorded 40+ conversations. Kept transcripts open while writing every screen.</p>
+              <ul><li>40+ user interviews</li><li>Competitive teardown · 12 apps</li><li>JTBD synthesis</li></ul>
+            </div>
+          </div>
+          <div class="step reveal d1">
+            <div class="num">02</div>
+            <div>
+              <div class="kicker">// WK 3–5 · DEFINITION</div>
+              <h3>Pick a brutal positioning, then defend it.</h3>
+              <p>&ldquo;If a workout makes the user feel inadequate on day one, we&rsquo;ve failed.&rdquo; Wrote it on the wall. Every feature I cut, I cut against that line. The first session ships at 8 minutes. No leaderboard. No before/after photos.</p>
+              <ul><li>One-line product principle</li><li>Anti-feature list</li><li>Onboarding spec · 2 pages</li></ul>
+            </div>
+          </div>
+          <div class="step reveal d2">
+            <div class="num">03</div>
+            <div>
+              <div class="kicker">// WK 5–13 · BUILD</div>
+              <h3>Ship rough, then make it gentle.</h3>
+              <p>Two&#8209;week sprints, end&#8209;to&#8209;end. Next.js + Tailwind + Supabase. A test cohort of 18 from the original interviews got the build a week early plus a Loom from me every Friday. Six rounds of copy edits. Three rounds of removing things.</p>
+              <ul><li>6 sprints · weekly Looms</li><li>Closed cohort · n=18</li><li>34 features cut · 12 shipped</li></ul>
+            </div>
+          </div>
+          <div class="step reveal d3">
+            <div class="num">04</div>
+            <div>
+              <div class="kicker">// WK 14 → NOW · LIVE</div>
+              <h3>Open the door, watch the floor.</h3>
+              <p>Soft launch. No paid acquisition &mdash; just the original cohort sharing with friends who&rsquo;d &ldquo;tried apps before and bounced.&rdquo; The retention curve held, and the support inbox told me what to build next. Still iterating weekly.</p>
+              <ul><li>Public launch · Aug 2024</li><li>Weekly release cadence</li><li>Roadmap from inbox</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DECISIONS ============ -->
+  <section class="block" data-screen-label="04 Decisions">
+    <div class="container">
+      <div class="section-label reveal">// 03 — Design decisions</div>
+      <h2 class="h reveal">What other apps do <span class="accent">vs. what LowLift does.</span></h2>
+      <p class="lede-p reveal">Every meaningful product choice in LowLift is a deliberate inversion of an industry default. Six examples.</p>
+
+      <div class="decisions reveal d1">
+        <header>
+          <h3>Inversions, by design.</h3>
+          <p>// LEFT: WHAT THE CATEGORY SHIPS — RIGHT: WHAT WE SHIP, AND WHY</p>
+        </header>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">A &ldquo;Day 1&rdquo; workout that lasts 30&ndash;45 minutes and assumes you can hold a plank.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body">First session is <b>8 minutes, seated&#8209;friendly</b>. The bar is &ldquo;press start.&rdquo; Everything ramps from there.</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Hero imagery of muscular bodies, before/after shots, transformation testimonials.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>No bodies on screen.</b> Illustrative shapes, neutral copy, no scales, no progress photos. Anti&#8209;shame is a UI commitment.</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Streaks that punish missed days with a reset to zero.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>Soft streaks.</b> Miss a day, keep the streak. Miss a week, the app says &ldquo;welcome back&rdquo; &mdash; not &ldquo;you broke a 14&#8209;day streak.&rdquo;</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Locked content behind subscription on day 2.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>First 30 days fully free.</b> If we haven&rsquo;t earned a habit in a month, we don&rsquo;t deserve the card.</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Calorie counting bolted onto the workout flow.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>No calorie surface, anywhere.</b> The data correlates poorly with this user&rsquo;s goal. We&rsquo;d rather miss a metric than re&#8209;traumatize.</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Push notifications optimized for re&#8209;engagement (&ldquo;Don&rsquo;t break your streak!&rdquo;).</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>One nudge per week, max.</b> Tone: a friend checking in. We measured open rate, then stopped caring &mdash; retention held without the pressure.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREENS ============ -->
+  <section class="block" data-screen-label="05 Screens">
+    <div class="container">
+      <div class="section-label reveal">// 04 — Selected screens</div>
+      <h2 class="h reveal">Three moments that <span class="accent">earn the user&rsquo;s trust.</span></h2>
+
+      <div class="gallery">
+        <div class="screen reveal">
+          <div class="label"><span class="num">01</span> ONBOARDING</div>
+          <div class="mini-phone mp-on">
+            <div class="mp-head"><span>STEP 1 / 3</span><span>2 MIN</span></div>
+            <div class="pgr"><i></i></div>
+            <div class="q">When did you last work out, honestly?</div>
+            <div class="opt">This week</div>
+            <div class="opt">A month or two ago</div>
+            <div class="opt sel">It&rsquo;s been a while</div>
+            <div class="opt">Never, really</div>
+          </div>
+          <div class="caption">Honest by design.<span>The lowest answer is treated as the default starting point. Praised, not punished.</span></div>
+        </div>
+        <div class="screen reveal d1">
+          <div class="label"><span class="num">02</span> TODAY VIEW</div>
+          <div class="mini-phone mp-today">
+            <div class="mp-head"><span>TUE · DAY 12</span><span>14 MIN</span></div>
+            <h5>One thing today.</h5>
+            <div class="sub">If you only do this, you win the day.</div>
+            <div class="ring2"><b>14:00</b></div>
+            <div class="row"><span>Wall sit</span><span class="v">0:30</span></div>
+            <div class="row"><span>BW squats</span><span class="v">2 × 8</span></div>
+            <div class="row"><span>Glute bridge</span><span class="v">2 × 10</span></div>
+            <div class="row"><span>Standing reach</span><span class="v">1:00</span></div>
+          </div>
+          <div class="caption">One screen, one job.<span>Choice paralysis kills early users. We pick the workout for you and call it the win.</span></div>
+        </div>
+        <div class="screen reveal d2">
+          <div class="label"><span class="num">03</span> SOFT STREAK</div>
+          <div class="mini-phone mp-streak">
+            <div class="mp-head"><span>WEEK 14</span><span>SOFT</span></div>
+            <h5>Still going.</h5>
+            <div class="sub">Even with two weeks off in there.</div>
+            <div class="grid2">
+              <i class="lvl2"></i><i class="lvl1"></i><i class="lvl3"></i><i class="lvl2"></i><i></i><i></i><i class="lvl1"></i>
+              <i class="lvl3"></i><i class="lvl2"></i><i></i><i class="lvl1"></i><i class="lvl2"></i><i class="lvl3"></i><i class="lvl3"></i>
+            </div>
+            <div class="stat"><span>Active weeks</span><b>11 / 14</b></div>
+            <div class="stat"><span>Sessions</span><b>38</b></div>
+            <div class="stat"><span>Best streak</span><b>9 days</b></div>
+          </div>
+          <div class="caption">Forgiving math.<span>&ldquo;Active weeks&rdquo; instead of consecutive days. Comebacks count. The grid never goes back to empty.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section class="block" data-screen-label="06 Results">
+    <div class="container">
+      <div class="section-label reveal">// 05 — Results · 90 days post-launch</div>
+      <h2 class="h reveal">The retention curve <span class="accent">held.</span></h2>
+      <p class="lede-p reveal">Self&#8209;reported, sample of 312 users in the first cohort. No paid acquisition. The numbers below are real, not aspirational.</p>
+
+      <div class="results-grid">
+        <div class="result reveal"><div class="big" data-count="62" data-suffix="%">0</div><div class="lab">D30 retention<br />(category benchmark: ~24%)</div><div class="src">// 312 USERS</div></div>
+        <div class="result reveal d1"><div class="big">8.4×</div><div class="lab">Sessions per active user in first 30 days</div><div class="src">// MEDIAN</div></div>
+        <div class="result reveal d2"><div class="big" data-count="71" data-suffix="%">0</div><div class="lab">Said it was the first app they &ldquo;didn&rsquo;t quit.&rdquo;</div><div class="src">// POST-ONBOARDING SURVEY</div></div>
+        <div class="result blue reveal d3"><div class="big">$0</div><div class="lab">Spent on acquisition. All organic, all word&#8209;of&#8209;mouth.</div><div class="src">// TO DATE</div></div>
+      </div>
+
+      <div class="testify reveal">
+        <p class="q">&ldquo;I&rsquo;ve started &mdash; and quit &mdash; every fitness app on the App Store. This one didn&rsquo;t make me feel like I was already failing on the home screen. I just opened it and did the thing. That&rsquo;s never happened before.&rdquo;</p>
+        <div class="who">
+          <div class="av"></div>
+          <div><b>Beta user · Day 47</b><div>VERBATIM · IN-APP FEEDBACK · NOV 2024</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REFLECTION ============ -->
+  <section class="block" data-screen-label="07 Reflection">
+    <div class="container">
+      <div class="section-label reveal">// 06 — Reflection</div>
+      <h2 class="h reveal">What I&rsquo;d do <span class="accent">differently next time.</span></h2>
+
+      <div class="reflect">
+        <div class="reflect-card reveal">
+          <div class="lab">WHAT_WORKED</div>
+          <ul>
+            <li><b>One-line product principle</b>&ldquo;If a workout makes the user feel inadequate on day one, we&rsquo;ve failed.&rdquo; Cut 34 features without a meeting.</li>
+            <li><b>Closed cohort before public</b>Eighteen people who already trusted me caught problems a marketing site never would.</li>
+            <li><b>Solo end-to-end</b>Spec, design, and code in one head meant no translation loss. Every Friday the build matched the brief.</li>
+          </ul>
+        </div>
+        <div class="reflect-card next reveal d1">
+          <div class="lab">WHAT_I&rsquo;D_CHANGE</div>
+          <ul>
+            <li><b>Built analytics last</b>I shipped without proper event tracking. The first month of retention came from a Supabase query I wrote at midnight. Should&rsquo;ve been first.</li>
+            <li><b>Underspec&rsquo;d the comeback</b>&ldquo;Welcome back&rdquo; was a footnote. Half the qualitative wins came from people returning after 2+ weeks. That moment deserves its own design pass.</li>
+            <li><b>Held the price too long</b>Should have charged earlier. Free was a crutch &mdash; paid users gave 4× the feedback.</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="next-up reveal d2" href="index.html#work">
+        <div><div class="k">// BACK TO WORK</div><h4>See the rest of the work →</h4></div>
+        <span class="arr">View all<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M5 12h14M13 5l7 7-7 7" /></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 Taylor Pangilinan</div>
+      <div class="status"><span class="d"></span> LowLift Fitness · Case study</div>
+      <div>Built end-to-end</div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  var nav = document.getElementById('topnav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 24); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    revealEls.forEach(function (el) { io.observe(el); });
+    setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ if(el.getBoundingClientRect().top < innerHeight+120) el.classList.add('in'); }); }, 300);
+    setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ el.classList.add('in'); }); }, 1800);
+  } else { revealEls.forEach(function (el) { el.classList.add('in'); }); }
+
+  function runCount(el){
+    var t=parseFloat(el.dataset.count), suf=el.dataset.suffix||'', s=performance.now();
+    function tick(n){ var p=Math.min(1,(n-s)/1400); el.textContent=Math.round((1-Math.pow(1-p,3))*t)+suf; if(p<1) requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  }
+  if ('IntersectionObserver' in window) {
+    var co=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ runCount(e.target); co.unobserve(e.target);} }); }, {threshold:0.6});
+    document.querySelectorAll('[data-count]').forEach(function(el){ co.observe(el); });
+  } else { document.querySelectorAll('[data-count]').forEach(runCount); }
+})();
+</script>
+
+</body>
+</html>

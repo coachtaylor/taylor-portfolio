@@ -4,13 +4,13 @@ import { resolve } from "node:path";
 export default defineConfig({
   server: {
     port: 5173,
-    open: "/portfolio_v1_dark.html",
+    open: "/index.html",
   },
   build: {
     rollupOptions: {
       input: {
-        light: resolve(__dirname, "portfolio.html"),
-        dark: resolve(__dirname, "portfolio_v1_dark.html"),
+        main: resolve(__dirname, "index.html"),
+        caseLowlift: resolve(__dirname, "case-lowlift-v2.html"),
       },
     },
   },

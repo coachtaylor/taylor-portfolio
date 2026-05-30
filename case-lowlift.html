@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LowLift Fitness — Case Study · Taylor Pangilinan</title>
+<meta name="description" content="How I designed, built, and shipped LowLift Fitness solo — a movement-consistency app built against the category's retention failure modes, for desk-bound adults and ADHD brains the fitness market ignores." />
+<link rel="canonical" href="https://taylorp.me/case-lowlift" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://taylorp.me/case-lowlift" />
+<meta property="og:title" content="LowLift Fitness — Case Study · Taylor Pangilinan" />
+<meta property="og:description" content="A solo, end-to-end product case study: designing a movement-consistency app against the category's six retention failure modes." />
+<meta property="og:image" content="https://taylorp.me/assets/lowlift-app.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="LowLift Fitness — Case Study · Taylor Pangilinan" />
+<meta name="twitter:description" content="A solo, end-to-end product case study: designing a movement-consistency app against the category's six retention failure modes." />
+<meta name="twitter:image" content="https://taylorp.me/assets/lowlift-app.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="portfolio.css" />
+<link rel="stylesheet" href="case.css" />
+</head>
+<body class="case">
+
+<div class="bg-base"></div>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+
+<nav class="top case-nav" id="topnav">
+  <div class="container nav-row">
+    <a class="back-link" href="index.html#work">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 19l-7-7 7-7" /></svg>
+      All work
+    </a>
+    <div class="nav-right">
+      <span class="pill">LowLift Fitness</span>
+      <span class="live-text">Case study</span>
+    </div>
+  </div>
+</nav>
+
+<main class="shell" id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="case-hero" data-screen-label="01 Hero">
+    <div class="container">
+      <div class="hero-deck">
+        <div>
+          <div class="hero-tag reveal"><span class="num">01</span> Case study · Health &amp; wellness · Live</div>
+          <h1 class="case-title reveal d1">Built for the <span class="accent">first two minutes</span>, not the next personal best.</h1>
+          <p class="hero-lede reveal d2">
+            LowLift is a movement&#8209;consistency app for the people the fitness category quietly loses &mdash;
+            desk&#8209;bound adults and ADHD brains who know they should move and can&rsquo;t seem to start.
+            Two&#8209;to&#8209;five&#8209;minute sessions, built to make starting easier than avoiding. I found the bet, designed the
+            anti&#8209;shame system, and shipped it to the App Store solo &mdash; research, design, and code &mdash; in four months.
+          </p>
+        </div>
+        <div class="hero-phone reveal d2">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <img src="assets/lowlift-app.png" alt="LowLift Fitness home screen" />
+          </div>
+        </div>
+      </div>
+
+      <div class="meta-strip reveal d3">
+        <div class="meta-cell"><div class="k">// ROLE</div><div class="v">Solo · research → design → code → ship</div></div>
+        <div class="meta-cell"><div class="k">// TIMELINE</div><div class="v">4 months · 2026</div></div>
+        <div class="meta-cell"><div class="k">// STACK</div><div class="v">React Native (Expo) · TypeScript · Supabase</div></div>
+        <div class="meta-cell"><div class="k">// STATUS</div><div class="v live">Live · 1 month in</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="block" data-screen-label="02 Problem">
+    <div class="container">
+      <div class="section-label reveal">// 01 — The problem</div>
+      <h2 class="h reveal">The category loses this user <span class="accent">on purpose.</span></h2>
+
+      <div class="hook reveal d1">
+        <div>
+          <p class="pull">Open any top&#8209;grossing fitness app. <em>Day 1 is a 45&#8209;minute HIIT.</em> Day 2 is a heavier 45&#8209;minute HIIT. There is no Day 0.</p>
+          <div class="author">// TP, opening notes · 2026</div>
+        </div>
+        <div class="ring-stat">
+          <div class="big">90%</div>
+          <div class="lab">of mobile app users are gone within 30 days</div>
+          <div class="src">// PUBLISHED RETENTION BENCHMARKS. THE PEOPLE I BUILD FOR QUIT EVEN FASTER.</div>
+        </div>
+      </div>
+
+      <div class="insight-grid">
+        <div class="insight reveal"><div class="badge">A</div><h3>The &ldquo;easy&rdquo; tier still isn&rsquo;t easy.</h3><p>The category&rsquo;s gentlest plan is a 30&#8209;45 minute session that assumes you can hold a plank. Anyone deconditioned and desk&#8209;bound bounces in week one &mdash; and blames themselves, not the program.</p></div>
+        <div class="insight reveal d1"><div class="badge">B</div><h3>Streaks punish the user I build for.</h3><p>Streaks are the category&rsquo;s default retention engine. For ADHD adults they backfire: rejection&#8209;sensitive, all&#8209;or&#8209;nothing thinking means one broken streak triggers shame that outweighs every win &mdash; so they quit.</p></div>
+        <div class="insight reveal d2"><div class="badge">C</div><h3>The sharpest wedge is the one nobody fights for.</h3><p>I scored seven audiences across five dimensions. ADHD adults (21/25) and desk&#8209;bound, work&#8209;from&#8209;home folks (20/25) won &mdash; intense, daily pain that an ultra&#8209;short mechanic is built for, in a space no incumbent owns.</p></div>
+      </div>
+
+      <div class="wedge reveal d3">
+        <div class="wedge-k">// How I chose the wedge</div>
+        <p class="wedge-sub">Before writing a line of code, I scored seven candidate audiences 1&ndash;5 across five dimensions. The wedge wasn&rsquo;t a hunch &mdash; it was the top of a ranked list, and the two winners share enough behavior to serve with one product.</p>
+        <div class="scroll">
+        <table>
+          <thead>
+            <tr><th>Audience</th><th>Demand</th><th>Market</th><th>Gap</th><th>Feasible</th><th>Economics</th><th>Total</th></tr>
+          </thead>
+          <tbody>
+            <tr class="win"><td>ADHD adults <span class="tag-win">WEDGE</span></td><td>5</td><td>4</td><td>4</td><td>4</td><td>4</td><td class="tot">21</td></tr>
+            <tr class="win"><td>Desk&#8209;bound / WFH <span class="tag-win">RIDES ALONG</span></td><td>4</td><td>5</td><td>3</td><td>5</td><td>3</td><td class="tot">20</td></tr>
+            <tr><td>Busy parents</td><td>4</td><td>5</td><td>2</td><td>3</td><td>4</td><td class="tot">18</td></tr>
+            <tr><td>Fell&#8209;off fitness</td><td>3</td><td>5</td><td>2</td><td>2</td><td>3</td><td class="tot">15</td></tr>
+            <tr><td>Over&#8209;40, health&#8209;prompted</td><td>3</td><td>4</td><td>3</td><td>2</td><td>3</td><td class="tot">15</td></tr>
+            <tr><td>Chronic pain / mobility</td><td>5</td><td>3</td><td>2</td><td>1</td><td>4</td><td class="tot">15</td></tr>
+            <tr><td>Students / early&#8209;career</td><td>3</td><td>4</td><td>3</td><td>3</td><td>2</td><td class="tot">15</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="wedge-foot">// SCORED ON DEMAND INTENSITY, MARKET SIZE, COMPETITIVE GAP, SOLO FEASIBILITY, ECONOMIC VIABILITY. ADHD WON ON PAIN INTENSITY AND AN OPEN FIELD; WFH ON REACH AND FEASIBILITY. EVERYONE ELSE HIT A COMPETITION OR FEASIBILITY WALL.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="block" data-screen-label="03 Process">
+    <div class="container">
+      <div class="section-label reveal">// 02 — Process</div>
+      <h2 class="h reveal">Four months. <span class="accent">No agency. No committee.</span></h2>
+
+      <div class="process">
+        <aside class="process-aside reveal">
+          <span class="label-pill">SOLO_LOOP</span>
+          <p style="margin-top:18px;font-size:14px;color:var(--muted);line-height:1.62">One person doing discovery, design, code, and shipping &mdash; no handoffs, no translation loss. Each phase fed the next: research set the principle, the principle drove the cuts, the build decided what shipped.</p>
+        </aside>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="num">01</div>
+            <div>
+              <div class="kicker">// WK 1–3 · DISCOVERY</div>
+              <h3>Talk to the people the category keeps losing.</h3>
+              <p>Not fitness enthusiasts &mdash; the people who keep bouncing. ADHD adults, desk&#8209;bound remote workers, serial app&#8209;quitters, recruited from r/ADHD and remote&#8209;work communities. Recorded 40+ conversations, then tore down exactly how the whole category fails them.</p>
+              <ul><li>40+ user interviews</li><li>7 audiences scored × 5 dimensions</li><li>Six&#8209;failure&#8209;mode retention teardown</li></ul>
+            </div>
+          </div>
+          <div class="step reveal d1">
+            <div class="num">02</div>
+            <div>
+              <div class="kicker">// WK 3–5 · DEFINITION</div>
+              <h3>Pick a brutal principle, then defend it.</h3>
+              <p>&ldquo;Make starting easier than avoiding.&rdquo; Wrote it on the wall. Every feature I cut, I cut against that line. The hardest cut was streaks &mdash; the category&rsquo;s #1 retention engine, proven to work and proven to wreck the ADHD user the day it breaks. I killed it on purpose. Sessions ship at 2&#8209;5 minutes. No leaderboard. No bodies on screen.</p>
+              <ul><li>One&#8209;line principle: make starting easier than avoiding</li><li>Anti&#8209;feature list</li><li>Belief&#8209;first onboarding spec</li></ul>
+            </div>
+          </div>
+          <div class="step reveal d2">
+            <div class="num">03</div>
+            <div>
+              <div class="kicker">// WK 5–13 · BUILD</div>
+              <h3>Ship rough, then make it gentle.</h3>
+              <p>Two&#8209;week sprints, end&#8209;to&#8209;end. React Native (Expo) + Supabase. Sessions are 2&#8209;5 minutes of timed coaching text &mdash; the emotional UX lives in the words, not a separate feature. A closed cohort from the original interviews got early builds and a standing feedback loop. Many rounds of copy edits. More rounds of removing things.</p>
+              <ul><li>Closed cohort feedback loop</li><li>Sessions: Move / Stretch / Both</li><li>Cut hard, shipped lean</li></ul>
+            </div>
+          </div>
+          <div class="step reveal d3">
+            <div class="num">04</div>
+            <div>
+              <div class="kicker">// WK 14 → NOW · LIVE</div>
+              <h3>Open the door, watch the floor.</h3>
+              <p>Soft launch. No paid acquisition &mdash; just the original cohort sharing with friends who&rsquo;d &ldquo;tried apps before and bounced.&rdquo; The support inbox started telling me what to build next. Still iterating weekly.</p>
+              <ul><li>Public launch · April 2026</li><li>Weekly release cadence</li><li>Roadmap from the inbox</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DECISIONS ============ -->
+  <section class="block" data-screen-label="04 Decisions">
+    <div class="container">
+      <div class="section-label reveal">// 03 — Design decisions</div>
+      <h2 class="h reveal">What other apps do <span class="accent">vs. what LowLift does.</span></h2>
+      <p class="lede-p reveal">Every meaningful choice in LowLift inverts a category default &mdash; and each one maps to a documented reason the category loses this user. Six of them.</p>
+
+      <div class="decisions reveal d1">
+        <header>
+          <h3>Inversions, by design.</h3>
+          <p>// LEFT: WHAT THE CATEGORY SHIPS — RIGHT: WHAT WE SHIP, AND WHY</p>
+        </header>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">A &ldquo;Day 1&rdquo; workout that lasts 30&ndash;45 minutes and assumes you can hold a plank.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body">Sessions are <b>2&#8209;5 minutes</b> &mdash; Move, Stretch, or Both. The bar is &ldquo;press start.&rdquo; Everything ramps from there.</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Hero imagery of muscular bodies, before/after shots, transformation testimonials.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>No bodies on screen.</b> Illustrative shapes, neutral copy, no scales, no progress photos. Anti&#8209;shame is a UI commitment.</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Streaks that reset to zero and punish the day you miss.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>No streak&#8209;shame.</b> Progress counts &ldquo;days you showed up,&rdquo; never days since. Miss a week and nothing resets &mdash; come back and the app says &ldquo;glad you&rsquo;re back, no catching up needed.&rdquo;</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">A buzzer that says &ldquo;stretch&rdquo; and leaves you to figure out what to do.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>Coaching, not commands.</b> Every movement is timed text that reads like a person (&ldquo;roll your shoulders back, nice and slow&rdquo;), so low motivation never stalls on &ldquo;what do I even do?&rdquo;</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">A product engineered so you depend on it &mdash; and its notifications &mdash; forever.</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>Designed for the prompt to fade.</b> The success metric isn&rsquo;t prompted sessions, it&rsquo;s the rising share you start on your own. The goal is a habit, not a dependency.</div></div>
+        </div>
+        <div class="decision">
+          <div class="col"><div class="tag broken">CATEGORY DEFAULT</div><div class="body">Push notifications optimized for re&#8209;engagement (&ldquo;Don&rsquo;t break your streak!&rdquo;).</div></div>
+          <div class="col"><div class="tag fix">LOWLIFT</div><div class="body"><b>One nudge per week, max.</b> Tone: a friend checking in. 64% of users delete an app after five-plus notifications a week &mdash; we&rsquo;d rather under-nudge than train the dismissal reflex.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREENS ============ -->
+  <section class="block" data-screen-label="05 Screens">
+    <div class="container">
+      <div class="section-label reveal">// 04 — Selected screens</div>
+      <h2 class="h reveal">Three moments that <span class="accent">earn the user&rsquo;s trust.</span></h2>
+
+      <div class="gallery">
+        <div class="screen reveal">
+          <div class="label"><span class="num">01</span> ONBOARDING</div>
+          <div class="mini-phone mp-on">
+            <div class="mp-head"><span>WELCOME</span><span>2 SCREENS</span></div>
+            <div class="q">This one&rsquo;s different. And it&rsquo;s easy.</div>
+            <div class="opt sel">Start with 2 minutes &rarr;</div>
+            <div class="opt">No setup. No quiz. No goals to log.</div>
+            <div class="opt">Just press start.</div>
+          </div>
+          <div class="caption">Belief, not a quiz.<span>Two screens that make one argument &mdash; this is different, this is easy, start now. We never ask you to prove how unfit you are.</span></div>
+        </div>
+        <div class="screen reveal d1">
+          <div class="label"><span class="num">02</span> THE SESSION</div>
+          <div class="mini-phone mp-today">
+            <div class="mp-head"><span>TUE · MOVE</span><span>2 MIN</span></div>
+            <h5>Two minutes. That&rsquo;s it.</h5>
+            <div class="sub">Roll your shoulders back, nice and slow. Feel that tension release.</div>
+            <div class="ring2"><b>2:00</b></div>
+            <div class="row"><span>Standing March</span><span class="v">0:40</span></div>
+            <div class="row"><span>Seated Shoulder Rolls</span><span class="v">0:30</span></div>
+            <div class="row"><span>Chair Sit&#8209;to&#8209;Stand</span><span class="v">0:25</span></div>
+            <div class="row"><span>Neck Stretch</span><span class="v">0:25</span></div>
+          </div>
+          <div class="caption">Coaching, not commands.<span>One tap to start. Timed text that reads like a person &mdash; never a rep scheme to decode.</span></div>
+        </div>
+        <div class="screen reveal d2">
+          <div class="label"><span class="num">03</span> PROGRESS</div>
+          <div class="mini-phone mp-streak">
+            <div class="mp-head"><span>WHAT YOU&rsquo;VE BUILT</span><span>MAY</span></div>
+            <h5>Welcome back.</h5>
+            <div class="sub">No catching up needed.</div>
+            <div class="grid2">
+              <i class="lvl2"></i><i class="lvl1"></i><i class="lvl3"></i><i class="lvl2"></i><i></i><i></i><i class="lvl1"></i>
+              <i class="lvl3"></i><i class="lvl2"></i><i></i><i class="lvl1"></i><i class="lvl2"></i><i class="lvl3"></i><i class="lvl3"></i>
+            </div>
+            <div class="stat"><span>Days you showed up</span><b>21</b></div>
+            <div class="stat"><span>Sessions</span><b>47</b></div>
+            <div class="stat"><span>Longest streak</span><b>9 days</b></div>
+          </div>
+          <div class="caption">The comeback is the feature.<span>&ldquo;Days you showed up,&rdquo; never &ldquo;days since.&rdquo; Miss a week and nothing resets to zero. The room never empties.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section class="block" data-screen-label="06 Results">
+    <div class="container">
+      <div class="section-label reveal">// 05 — Goals · how I&rsquo;ll measure success</div>
+      <h2 class="h reveal">The bar I&rsquo;m holding <span class="accent">myself to.</span></h2>
+      <p class="lede-p reveal">LowLift launched a month ago. Too early for a real retention read &mdash; so here&rsquo;s the bar I set on day one, <em>why each number is defensible</em> against published benchmarks, and the signal I&rsquo;m watching. Targets I&rsquo;m tracking against, not results I&rsquo;m claiming.</p>
+
+      <div class="results-grid">
+        <div class="result reveal"><div class="big" data-count="20" data-suffix="%">0</div><div class="lab">Day&#8209;7 retention &mdash; my go/no&#8209;go validation gate</div><div class="src">// PRIMARY METRIC</div></div>
+        <div class="result reveal d1"><div class="big">8&#8209;12%</div><div class="lab">The category&rsquo;s average 30&#8209;day retention. The bar the whole design is built to beat.</div><div class="src">// BENCHMARK</div></div>
+        <div class="result reveal d2"><div class="big">Pull</div><div class="lab">Rising share of <b>un&#8209;prompted</b> sessions &mdash; the real signal a habit is forming, not nagging.</div><div class="src">// NORTH STAR</div></div>
+        <div class="result blue reveal d3"><div class="big">$0</div><div class="lab">Planned paid acquisition. Organic, identity&#8209;led distribution.</div><div class="src">// PLAN</div></div>
+      </div>
+
+      <div class="testify reveal">
+        <p class="q">I built LowLift for the person who downloads a fitness app on Sunday and has deleted it by Thursday. The whole product is one idea &mdash; make starting easier than avoiding. If a session ever makes you feel behind, it failed.</p>
+        <div class="who">
+          <div class="av"></div>
+          <div><b>Taylor Pangilinan</b><div>PRODUCT POV · DESIGNED, BUILT &amp; SHIPPED SOLO</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REFLECTION ============ -->
+  <section class="block" data-screen-label="07 Reflection">
+    <div class="container">
+      <div class="section-label reveal">// 06 — Reflection</div>
+      <h2 class="h reveal">What I&rsquo;d do <span class="accent">differently next time.</span></h2>
+
+      <div class="reflect">
+        <div class="reflect-card reveal">
+          <div class="lab">WHAT_WORKED</div>
+          <ul>
+            <li><b>A principle sharp enough to cut with</b>&ldquo;Make starting easier than avoiding&rdquo; wasn&rsquo;t a tagline, it was the kill criterion. Every feature debate ended at the same wall, so decisions were fast and scope stayed honest.</li>
+            <li><b>A contrarian bet, made on evidence</b>I bet against streaks &mdash; the category&rsquo;s most-copied retention tool &mdash; because the research said they wreck my exact user. Conviction from data, not consensus.</li>
+            <li><b>Solo, end-to-end</b>Finding the bet and building it lived in one head. No translation loss &mdash; I could feel a bad flow in code the same day I specced it.</li>
+          </ul>
+        </div>
+        <div class="reflect-card next reveal d1">
+          <div class="lab">WHAT_I&rsquo;D_CHANGE</div>
+          <ul>
+            <li><b>I instrumented last, not first</b>Light on analytics at launch, so my early read came from the support inbox, not the funnel. <span class="accent">Fixing it &rarr;</span> wiring event tracking across the first-session funnel &mdash; open &rarr; session start &rarr; first movement &rarr; completion &mdash; so the next cohort is measured at the exact drop-off point instead of guessed at.</li>
+            <li><b>I solved &ldquo;easy to start,&rdquo; not &ldquo;want to return&rdquo;</b>The retention bet still leans on the prompt &mdash; nothing yet makes you open LowLift on your own. <span class="accent">Fixing it &rarr;</span> prototyping a pull layer: a weekly progress story worth checking, and a 10-second before/after mood check-in that builds a private narrative you come back for.</li>
+            <li><b>I hedged the positioning at first</b>I treated &ldquo;ADHD&rdquo; as a market-narrowing risk and kept the early framing generic. My own analysis said the opposite &mdash; it&rsquo;s the sharpest, most defensible wedge, and it comes with built-in community distribution. <span class="accent">Fixing it &rarr;</span> leaning the messaging explicitly into ADHD movement &mdash; r/ADHD, ADHD creators &mdash; where this user actually is.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lede-p reveal d2" style="margin-top:40px">The throughline: I can find a sharp bet and ship it solo. What I&rsquo;m sharpening now is the follow-through &mdash; <span class="accent">measure the funnel, commit to the wedge, and earn the return, not just the start.</span></p>
+
+      <a class="next-up reveal d2" href="index.html#work">
+        <div><div class="k">// BACK TO WORK</div><h4>See the rest of the work →</h4></div>
+        <span class="arr">View all<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M5 12h14M13 5l7 7-7 7" /></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 Taylor Pangilinan</div>
+      <div class="status"><span class="d"></span> LowLift Fitness · Case study</div>
+      <div>Built end-to-end</div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  var nav = document.getElementById('topnav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 24); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    revealEls.forEach(function (el) { io.observe(el); });
+    setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ if(el.getBoundingClientRect().top < innerHeight+120) el.classList.add('in'); }); }, 300);
+    setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ el.classList.add('in'); }); }, 1800);
+  } else { revealEls.forEach(function (el) { el.classList.add('in'); }); }
+
+  function runCount(el){
+    var t=parseFloat(el.dataset.count), suf=el.dataset.suffix||'', s=performance.now();
+    function tick(n){ var p=Math.min(1,(n-s)/1400); el.textContent=Math.round((1-Math.pow(1-p,3))*t)+suf; if(p<1) requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  }
+  if ('IntersectionObserver' in window) {
+    var co=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ runCount(e.target); co.unobserve(e.target);} }); }, {threshold:0.6});
+    document.querySelectorAll('[data-count]').forEach(function(el){ co.observe(el); });
+  } else { document.querySelectorAll('[data-count]').forEach(runCount); }
+})();
+</script>
+
+</body>
+</html>

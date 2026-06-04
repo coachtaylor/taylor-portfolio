@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        caseLowlift: resolve(__dirname, "case-lowlift-v2.html"),
+        caseLowlift: resolve(__dirname, "case-lowlift.html"),
       },
     },
   },

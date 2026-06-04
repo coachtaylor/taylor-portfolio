@@ -349,16 +349,16 @@ h2.section-title .accent { color: var(--accent); }
 .pv-flag .mk-dot.r { background: var(--blue); box-shadow: 0 0 10px var(--blue); }
 .pv-flag .mk-stat { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); padding: 4px 0; }
 .pv-flag .mk-stat b { color: var(--accent); font-family: "JetBrains Mono", monospace; font-weight: 500; }
-/* trans */
-.pv-trans .mk-h { font-size: 15px; font-weight: 650; margin: 4px 0 12px; }
-.pv-trans .mk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
-.pv-trans .mk-grid div { border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: rgba(255,255,255,0.02); }
-.pv-trans .mk-grid b { display: block; color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 16px; }
-.pv-trans .mk-grid span { color: var(--faint); font-size: 10px; }
-.pv-trans .mk-list .item { display: flex; align-items: center; gap: 9px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
-.pv-trans .mk-list .item::before { content: ""; width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--faint); flex: none; }
-.pv-trans .mk-list .item.done { color: var(--text); }
-.pv-trans .mk-list .item.done::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 8px var(--accent); }
+/* progress tracker mockup */
+.pv-prog .mk-h { font-size: 15px; font-weight: 650; margin: 4px 0 12px; }
+.pv-prog .mk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.pv-prog .mk-grid div { border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: rgba(255,255,255,0.02); }
+.pv-prog .mk-grid b { display: block; color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 16px; }
+.pv-prog .mk-grid span { color: var(--faint); font-size: 10px; }
+.pv-prog .mk-list .item { display: flex; align-items: center; gap: 9px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.pv-prog .mk-list .item::before { content: ""; width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--faint); flex: none; }
+.pv-prog .mk-list .item.done { color: var(--text); }
+.pv-prog .mk-list .item.done::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 8px var(--accent); }
 /* lola */
 .pv-lola { gap: 0; }
 .pv-lola .bubble { font-size: 12px; line-height: 1.45; padding: 11px 13px; border-radius: 14px; margin-bottom: 9px; max-width: 86%; }
